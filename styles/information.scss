@@ -1,0 +1,56 @@
+.information {
+    text-align: center;
+    margin-bottom: 30px;
+
+    .information__slider {
+        margin-top: 60px;
+
+        .slider__wrapper {
+            position: relative;
+
+            .slider__scroll {
+                gap: 30px;
+                display: flex;
+
+                .slide {
+                    text-align: start;
+
+                    .slide__title {
+                        margin-top: 20px;
+                        font-weight: 900;
+                        line-height: 71.7%;
+                    }
+                    .slide__paragraph {
+                        margin-top: 10px;
+                        color: #fff;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 120%;
+                        opacity: 0.7;
+                    }
+                }
+            }
+
+            .slider__arrow {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                left: -25px;
+                top: calc(50% - 66px);
+                width: 50px;
+                height: 50px;
+                background-color: #fff;
+                border-radius: 50%;
+
+                &:nth-last-child(1) {
+                    left: initial;
+                    right: -25px;
+                    img {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+    }
+}

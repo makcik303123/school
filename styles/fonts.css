@@ -27,10 +27,4 @@
   src: url("../fonts/Gilroy-LightItalic.woff2") format("woff2"), url("../fonts/Gilroy-LightItalic.woff") format("woff"), url("../fonts/Gilroy-LightItalic.ttf") format("truetype");
   font-weight: 300;
   font-style: italic;
-}
-body {
-  font-family: "Gilroy", sans-serif;
-  font-weight: 700;
-  color: #fff;
-  font-size: 20px;
 }/*# sourceMappingURL=fonts.css.map */

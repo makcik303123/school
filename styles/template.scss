@@ -1,0 +1,32 @@
+.template {
+    display: flex;
+    gap: 30px;
+    align-items: flex-end;
+    margin-bottom: 100px;
+
+    .template__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+
+        .template__block {
+            position: relative;
+            overflow: hidden;
+            gap: 40px;
+            padding: 38px 60px;
+            border-radius: 50px;
+            border: 1px solid #fff;
+
+            .block__title {
+                margin-bottom: 40px;
+            }
+
+            .block__pattern {
+                position: absolute;
+                top: 30px;
+                right: 0px;
+            }
+        }
+    }
+}
