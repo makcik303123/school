@@ -1,0 +1,71 @@
+.check-list {
+  margin-bottom: 26px;
+}
+.check-list .check-list__article {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.check-list .check-list__selection {
+  display: flex;
+  gap: 30px;
+}
+.check-list .check-list__selection .selection__block {
+  flex: 1;
+  height: 438px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 50px;
+  background-color: #0fb43d;
+  padding: 20px;
+}
+.check-list .check-list__selection .selection__block:nth-child(1) {
+  background-color: #0fb43d;
+}
+.check-list .check-list__selection .selection__block:nth-child(1) .block__class {
+  background-color: #0aa736;
+}
+.check-list .check-list__selection .selection__block:nth-child(2) {
+  background-color: #e7590a;
+}
+.check-list .check-list__selection .selection__block:nth-child(2) .block__class {
+  background-color: #d25007;
+}
+.check-list .check-list__selection .selection__block:nth-child(3) {
+  background-color: #ca3939;
+}
+.check-list .check-list__selection .selection__block:nth-child(3) .block__class {
+  background-color: #bc2525;
+}
+.check-list .check-list__selection .selection__block:nth-child(4) {
+  background-color: #d220a0;
+}
+.check-list .check-list__selection .selection__block:nth-child(4) .block__class {
+  background-color: #be168f;
+}
+.check-list .check-list__selection .selection__block .block__class {
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 43px;
+  width: 155px;
+  height: 50px;
+  font-family: Gilroy;
+  line-height: 130%;
+}
+.check-list .check-list__selection .selection__block .wrapper-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.check-list .check-list__selection .selection__block .wrapper-item .block__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.check-list .check-list__selection .selection__block .wrapper-item .block__item .item__name {
+  max-width: 192px;
+}/*# sourceMappingURL=check-list.css.map */

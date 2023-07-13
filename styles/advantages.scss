@@ -1,0 +1,49 @@
+.advantages {
+    position: relative;
+    z-index: 2;
+
+    .advantages__suplies {
+        position: absolute;
+        left: 0;
+    }
+    .advantages__promo {
+        position: relative;
+        height: fit-content;
+
+        .promo__star {
+            position: absolute;
+            right: -23px;
+        }
+    }
+
+    .advantages__blocks {
+        display: flex;
+        flex-direction: row;
+        gap: 23px;
+        padding: 30px 0;
+
+        .blocks__button {
+            width: calc(33% - 15.3px);
+            height: 188px;
+            border-radius: 50px;
+            background: #5fdc64;
+            color: #fff;
+            text-align: center;
+            font-family: Cera Condensed Pro;
+            font-size: 50px;
+            font-weight: 900;
+            line-height: 85%;
+        }
+    }
+    .wrapper__picture {
+        position: relative;
+        
+
+        img {
+            z-index: 1;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+}
