@@ -17,8 +17,26 @@ hamburgerBody.querySelectorAll(".nav__link").forEach((link) => {
 });
 
 
+const  btnLeft = document.querySelector('#btnLeft')
+const  btnRight = document.querySelector('#btnRight')
+const  slider = document.querySelector('.slider__scroll')
+const  slides = document.querySelectorAll('.slide')
 
+let position = 0;
 
+btnRight.addEventListener('click', () => {
+  const gap = window.getComputedStyle(slider).gap.slice(0, -2)
+  const slideWidth = slides[0].offsetWidth;
+  console.log(gap)
+  console.log(slideWidth)
+  position -= Number(slideWidth) + Number(gap)
+  slider.style.transform = `translateX(${position}px)`
+})
+
+btnLeft.addEventListener('click', () => {
+  position += 460
+  slider.style.transform = `translateX(${position}px)`
+})
 
 
 console.log('work') 
