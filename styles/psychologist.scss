@@ -1,0 +1,94 @@
+.psychologist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 58px;
+    padding-bottom: 91px;
+
+    .psychologist__article {
+        .article__flex {
+            display: flex;
+            align-items: center;
+
+            .article__title {
+                @media (max-width: 646px) {
+                    margin-top: 50px;
+                    font-size: 60px;
+                }
+                @media (max-width: 576px) {
+                    font-size: 40px;
+                }
+            }
+
+            img {
+                display: none;
+                @media (max-width: 992px) {
+                    display: block;
+                    margin-right: 15px;
+                }
+            }
+        }
+
+        .article__description {
+            .description__name {
+                font-size: 30px;
+                line-height: 130%;
+                margin-bottom: 2px;
+                @media (max-width: 576px) {
+                    font-size: 24px;
+                }
+            }
+
+            .description__job {
+                display: block;
+                font-size: 16px;
+                font-style: italic;
+                font-weight: 300;
+                line-height: 130%;
+                margin-bottom: 26px;
+                @media (max-width: 576px) {
+                    font-size: 13px;
+                }
+            }
+
+            .description__paragraph {
+                font-weight: 400;
+                line-height: 150%;
+                margin-bottom: 36px;
+                @media (max-width: 576px) {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    @media (max-width: 992px) {
+        flex-direction: column-reverse;
+    }
+
+    img {
+        width: 47%;
+        position: relative;
+        z-index: 2;
+        @media (max-width: 992px) {
+            display: none;
+        }
+    }
+}
+
+.wrapper__picture-1 {
+    position: relative;
+
+    .globe {
+        position: absolute;
+        top: -130px;
+        left: 0;
+        width: 14.5%;
+    }
+
+    .suplies {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 14%;
+    }
+}

@@ -46,10 +46,10 @@ body {
               text-align: center;
               line-height: 71.7%;
 
-              // @media (max-width: 992px) {
-              //     font-size: 32px;
-              //     line-height: 60px;
-              // }
+              @media (max-width: 992px) {
+                  font-size: 32px;
+                  line-height: 60px;
+              }
             }
           }
           @media (max-width: 1200px) {
@@ -71,6 +71,7 @@ body {
           left: -100%;
           overflow: auto;
           opacity: 0;
+          border: none;
 
           &.active {
             opacity: 1;
@@ -142,6 +143,7 @@ body {
         }
       }
     }
+    
     @media (max-width: 992px) {
       justify-content: flex-end;
       padding: 25px 0;

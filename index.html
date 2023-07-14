@@ -5,15 +5,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
 		<link rel="stylesheet" href="styles/index.css" />
-    <link rel="stylesheet" href="styles/fonts.css" />
-    <link rel="stylesheet" href="styles/reset.css" />
+		<link rel="stylesheet" href="styles/fonts.css" />
+		<link rel="stylesheet" href="styles/reset.css" />
 		<link rel="stylesheet" href="styles/header.css" />
 		<link rel="stylesheet" href="styles/advantages.css" />
 		<link rel="stylesheet" href="styles/catalog.css" />
 		<link rel="stylesheet" href="styles/check-list.css" />
 		<link rel="stylesheet" href="styles/template.css" />
 		<link rel="stylesheet" href="styles/information.css" />
-		
+		<link rel="stylesheet" href="styles/psychologist.css" />
 	</head>
 	<body>
 		<div class="app">
@@ -72,14 +72,18 @@
 							<img src="/img/promo.png" alt="promo" />
 						</div>
 						<div class="wrapper__picture">
-							<img src="/img/straightedge.png" alt="straightedge" />
+							<img width="20%" src="/img/straightedge.png" alt="straightedge" />
 						</div>
 						<div class="advantages__blocks container">
-							<button class="blocks__button">Общение с психологом</button>
 							<button class="blocks__button">
-								Чек-листы для заботливых родителей
+								<span>Общение<br> с психологом</span>
 							</button>
-							<button class="blocks__button">Ништяки для школы</button>
+							<button class="blocks__button">
+								<span>Чек-листы <br />для заботливых родителей</span>
+							</button>
+							<button class="blocks__button">
+								<span>Ништяки<br> для школы</span>
+							</button>
 						</div>
 					</section>
 					<section class="catalog container">
@@ -91,7 +95,11 @@
 							</p>
 							<button class="button">Перейти в каталог</button>
 						</article>
-						<img src="/img/catalog.png" alt="catalog" />
+						<img
+							class="catalog__picture"
+							src="/img/catalog.png"
+							alt="catalog"
+						/>
 					</section>
 					<div class="wrapper__picture">
 						<img class="picture__globe" src="/img/globe.png" alt="globe" />
@@ -220,81 +228,181 @@
 						</div>
 					</section>
 					<section class="template container">
-						<img src="/img/pattern.png" alt="pattern">
+						<img src="/img/pattern.png" alt="pattern" />
 						<div class="template__wrapper">
 							<div class="template__block">
 								<h2 class="block__title article__title">Расписание уроков</h2>
 								<button class="button">Скачать шаблон</button>
-								<img class="block__pattern" src="/img/icon/pattern_1.svg" alt="pattern_1">
+								<img
+									class="block__pattern"
+									src="/img/icon/pattern_1.svg"
+									alt="pattern_1"
+								/>
 							</div>
 							<div class="template__block">
-								<h2 class="block__title article__title">Список <br>покупок</h2>
+								<h2 class="block__title article__title">Список покупок</h2>
 								<button class="button">Скачать шаблон</button>
-								<img class="block__pattern" src="/img/icon/pattern_2.svg" alt="pattern_2">
+								<img
+									class="block__pattern"
+									src="/img/icon/pattern_2.svg"
+									alt="pattern_2"
+								/>
 							</div>
 							<div class="template__block">
 								<h2 class="block__title article__title">Таблица умножения</h2>
 								<button class="button">Скачать шаблон</button>
-								<img class="block__pattern" src="/img/icon/pattern_3.svg" alt="pattern_3">
+								<img
+									class="block__pattern"
+									src="/img/icon/pattern_3.svg"
+									alt="pattern_3"
+								/>
 							</div>
 						</div>
 					</section>
 					<section class="information container">
-						<h2 class="article__title">Полезная
-							информация к школе</h2>
-							<p class="article__paragraph">Новости о школе, полезные статьи, выгодны предложения,
-								всё это вы можете узнать здесь!</p>
-							<div class="information__slider">
-								<div class="slider__wrapper">
-									<div class="slider__scroll">
-										<div class="slide">
-											<img src="/img/slide_img_1.png" alt="slide1" class="slide__img">
-											<h3 class="slide__title">Полезная информация о школе</h3>
-											<p class="slide__paragraph">Мальчик с первого класса, учил только математику
-												и к концу школы он стал ге...</p>
-										</div>
-										<div class="slide">
-											<img src="/img/slide_img_2.png" alt="slide2" class="slide__img">
-											<h3 class="slide__title">Полезная информация о школе</h3>
-											<p class="slide__paragraph">Мальчик с первого класса, учил только математику
-												и к концу школы он стал ге...</p>
-										</div>
-										<div class="slide">
-											<img src="/img/slide_img_3.png" alt="slide3" class="slide__img">
-											<h3 class="slide__title">Полезная информация о школе</h3>
-											<p class="slide__paragraph">Мальчик с первого класса, учил только математику
-												и к концу школы он стал ге...</p>
-										</div>
-										<div class="slide">
-											<img src="/img/slide_img_1.png" alt="slide1" class="slide__img">
-											<h3 class="slide__title">Полезная информация о школе</h3>
-											<p class="slide__paragraph">Мальчик с первого класса, учил только математику
-												и к концу школы он стал ге...</p>
-										</div>
-										<div class="slide">
-											<img src="/img/slide_img_2.png" alt="slide2" class="slide__img">
-											<h3 class="slide__title">Полезная информация о школе</h3>
-											<p class="slide__paragraph">Мальчик с первого класса, учил только математику
-												и к концу школы он стал ге...</p>
-										</div>
-										<div class="slide">
-											<img src="/img/slide_img_3.png" alt="slide3" class="slide__img">
-											<h3 class="slide__title">Полезная информация о школе</h3>
-											<p class="slide__paragraph">Мальчик с первого класса, учил только математику
-												и к концу школы он стал ге...</p>
-										</div>
+						<h2 class="article__title">Полезная информация к школе</h2>
+						<p class="article__paragraph">
+							Новости о школе, полезные статьи, выгодны предложения, всё это вы
+							можете узнать здесь!
+						</p>
+						<div class="information__slider">
+							<div class="slider__wrapper">
+								<div class="slider__scroll">
+									<div class="slide">
+										<img
+											width="440"
+											src="/img/slide_img_1.png"
+											alt="slide1"
+											class="slide__img"
+										/>
+										<h3 class="slide__title">Полезная информация о школе</h3>
+										<p class="slide__paragraph">
+											Мальчик с первого класса, учил только математику и к концу
+											школы он стал ге...
+										</p>
+									</div>
+									<div class="slide">
+										<img
+											width="440"
+											src="/img/slide_img_2.png"
+											alt="slide2"
+											class="slide__img"
+										/>
+										<h3 class="slide__title">Полезная информация о школе</h3>
+										<p class="slide__paragraph">
+											Мальчик с первого класса, учил только математику и к концу
+											школы он стал ге...
+										</p>
+									</div>
+									<div class="slide">
+										<img
+											width="440"
+											src="/img/slide_img_3.png"
+											alt="slide3"
+											class="slide__img"
+										/>
+										<h3 class="slide__title">Полезная информация о школе</h3>
+										<p class="slide__paragraph">
+											Мальчик с первого класса, учил только математику и к концу
+											школы он стал ге...
+										</p>
+									</div>
+									<div class="slide">
+										<img
+											width="440"
+											src="/img/slide_img_1.png"
+											alt="slide1"
+											class="slide__img"
+										/>
+										<h3 class="slide__title">Полезная информация о школе</h3>
+										<p class="slide__paragraph">
+											Мальчик с первого класса, учил только математику и к концу
+											школы он стал ге...
+										</p>
+									</div>
+									<div class="slide">
+										<img
+											width="440"
+											src="/img/slide_img_2.png"
+											alt="slide2"
+											class="slide__img"
+										/>
+										<h3 class="slide__title">Полезная информация о школе</h3>
+										<p class="slide__paragraph">
+											Мальчик с первого класса, учил только математику и к концу
+											школы он стал ге...
+										</p>
+									</div>
+									<div class="slide">
+										<img
+											width="440"
+											src="/img/slide_img_3.png"
+											alt="slide3"
+											class="slide__img"
+										/>
+										<h3 class="slide__title">Полезная информация о школе</h3>
+										<p class="slide__paragraph">
+											Мальчик с первого класса, учил только математику и к концу
+											школы он стал ге...
+										</p>
 									</div>
 								</div>
-								<div id="btnLeft" class="slider__arrow">
-									<img src="/img/icon/Arrow.svg" alt="Arrow">
+							</div>
+							<div id="btnLeft" class="slider__arrow">
+								<img src="/img/icon/Arrow.svg" alt="Arrow" />
+							</div>
+							<div id="btnRight" class="slider__arrow">
+								<img src="/img/icon/Arrow.svg" alt="Arrow" />
+							</div>
+						</div>
+					</section>
+					<div class="wrapper__picture-1">
+						<img class="globe" src="/img/globe_2.png" alt="globe_2" />
+						<img
+							class="suplies"
+							src="/img/school-suplies_2.png"
+							alt="school-suplies_2"
+						/>
+					</div>
+					<section class="psychologist container">
+						<img src="/img/psychologist.png" alt="psychologist" />
+						<article class="psychologist__article">
+							<div class="article__flex">
+								<img src="/img/psychologist.png" alt="psychologist" />
+								<div>
+									<h2 class="article__title">Общение <br />с психологом</h2>
+									<p class="article__paragraph">
+										Наш психолог поделится с вами своим опытом и знаниями в
+										области воспитания и обучения детей
+									</p>
 								</div>
-								<div id="btnRight" class="slider__arrow">
-									<img src="/img/icon/Arrow.svg" alt="Arrow">
-								</div>
-							</div>	
-					</section>	
+							</div>
+
+							<div class="article__description">
+								<h4 class="description__name">Елена Бондарева</h4>
+								<span class="description__job"
+									>Штатный психолог компании «Евроторг»</span
+								>
+								<p class="description__paragraph">
+									Lorem ipsum dolor sit amet consectetur. Et volutpat nulla
+									pellentesque montes ut viverra risus. Ut est interdum at fusce
+									convallis. Risus elementum sapien sed lobortis duis ridiculus
+									scelerisque interdum. Sit elementum posuere ultrices eget et
+									enim quis tellus in. Proin donec tortor facilisi vulputate
+									tristique vitae donec aenean. Quam urna amet hendrerit ut urna
+									tortor viverra tellus massa. Ultrices amet sit at ornare at.
+									Nulla viverra velit egestas facilisi tempor id diam. Aliquet
+									amet semper pretium est praesent tellus. Ut eleifend dui
+									natoque rhoncus elementum.
+								</p>
+								<button class="button">Задать свой вопрос</button>
+							</div>
+						</article>
+					</section>
 				</main>
-				<footer class="footer"></footer>
+				<footer class="footer">
+					<img class="footer__calc" src="img/calc.png" alt="calc" />
+				</footer>
 			</div>
 		</div>
 	</body>

@@ -40,6 +40,12 @@ body.lock {
   text-align: center;
   line-height: 71.7%;
 }
+@media (max-width: 992px) {
+  .header.container .menu .menu__body .header__nav .nav__item .nav__link {
+    font-size: 32px;
+    line-height: 60px;
+  }
+}
 @media (max-width: 1200px) {
   .header.container .menu .menu__body .header__nav {
     gap: 32px;
@@ -62,6 +68,7 @@ body.lock {
     left: -100%;
     overflow: auto;
     opacity: 0;
+    border: none;
   }
   .header.container .menu .menu__body.active {
     opacity: 1;

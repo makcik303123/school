@@ -1,0 +1,95 @@
+.psychologist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 58px;
+  padding-bottom: 91px;
+}
+.psychologist .psychologist__article .article__flex {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 646px) {
+  .psychologist .psychologist__article .article__flex .article__title {
+    margin-top: 50px;
+    font-size: 60px;
+  }
+}
+@media (max-width: 576px) {
+  .psychologist .psychologist__article .article__flex .article__title {
+    font-size: 40px;
+  }
+}
+.psychologist .psychologist__article .article__flex img {
+  display: none;
+}
+@media (max-width: 992px) {
+  .psychologist .psychologist__article .article__flex img {
+    display: block;
+    margin-right: 15px;
+  }
+}
+.psychologist .psychologist__article .article__description .description__name {
+  font-size: 30px;
+  line-height: 130%;
+  margin-bottom: 2px;
+}
+@media (max-width: 576px) {
+  .psychologist .psychologist__article .article__description .description__name {
+    font-size: 24px;
+  }
+}
+.psychologist .psychologist__article .article__description .description__job {
+  display: block;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 130%;
+  margin-bottom: 26px;
+}
+@media (max-width: 576px) {
+  .psychologist .psychologist__article .article__description .description__job {
+    font-size: 13px;
+  }
+}
+.psychologist .psychologist__article .article__description .description__paragraph {
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 36px;
+}
+@media (max-width: 576px) {
+  .psychologist .psychologist__article .article__description .description__paragraph {
+    font-size: 16px;
+  }
+}
+@media (max-width: 992px) {
+  .psychologist {
+    flex-direction: column-reverse;
+  }
+}
+.psychologist img {
+  width: 47%;
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 992px) {
+  .psychologist img {
+    display: none;
+  }
+}
+
+.wrapper__picture-1 {
+  position: relative;
+}
+.wrapper__picture-1 .globe {
+  position: absolute;
+  top: -130px;
+  left: 0;
+  width: 14.5%;
+}
+.wrapper__picture-1 .suplies {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 14%;
+}/*# sourceMappingURL=psychologist.css.map */
