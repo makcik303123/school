@@ -95,7 +95,7 @@
   margin-bottom: 20px;
   height: -moz-fit-content;
   height: fit-content;
-  transition: 0.8s;
+  transition: 0.4s;
 }
 .check-list .selection-wrapper .selection-container .check-list__selection .selection__block .wrapper-item .block__item .item__name {
   max-width: 192px;

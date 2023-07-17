@@ -156,6 +156,7 @@ let open = false
 app.addEventListener('click', () => {
   if (open === true) {
     hideItems()
+    open = false
   }
 })
 
@@ -187,5 +188,5 @@ function showItems() {
   })
   setTimeout(() => {
     open = true
-  }, 800)
+  }, 400)
 }
