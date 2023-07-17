@@ -71,11 +71,11 @@
 .information .information__slider .slider__arrow:nth-last-child(1):hover {
   left: initial;
   background-color: #b1b1b1;
-  right: -30px;
+  transform: translateX(5px);
 }
 .information .information__slider .slider__arrow:hover {
   background-color: #b1b1b1;
-  left: -30px;
+  transform: translateX(-5px);
 }
 @media (max-width: 1200px) {
   .information .information__slider .slider__arrow {

@@ -18,6 +18,7 @@
   padding: 38px 60px;
   border-radius: 50px;
   border: 1px solid #fff;
+  transition: 0.4s;
 }
 .template .template__wrapper .template__block .block__title {
   position: relative;
@@ -33,11 +34,16 @@
 .template .template__wrapper .template__block .button {
   position: relative;
   z-index: 2;
+  transition: 0.4s;
 }
 .template .template__wrapper .template__block .block__pattern {
   position: absolute;
   top: 30px;
-  right: 0px;
+  right: -30px;
+  transition: 0.4s;
+}
+.template .template__wrapper .template__block .block__pattern.change {
+  top: -180%;
 }
 @media (max-width: 992px) {
   .template .template__wrapper .template__block .block__pattern {
@@ -60,6 +66,18 @@
   .template .template__wrapper .template__block {
     padding: 18px 30px;
   }
+}
+.template .template__wrapper .template__block:hover {
+  background: rgba(108, 142, 13, 0.7);
+}
+.template .template__wrapper .template__block:hover .block__pattern.change {
+  top: 0;
+}
+.template .template__wrapper .template__block:hover .block__pattern.default {
+  top: 100%;
+}
+.template .template__wrapper .template__block:hover .button {
+  background: #FFEA00;
 }
 .template img {
   width: 49%;

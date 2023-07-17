@@ -36,12 +36,12 @@
             background-size: cover;
             color: #fff;
             text-align: center;
-            animation: rotate-btn 1.5s forwards ease-in-out;
+
             cursor: pointer;
             transform: scale(1);
             position: relative;
             z-index: 2;
-            
+
             @media (max-width: 1200px) {
                 height: 150px;
             }
@@ -61,19 +61,18 @@
                 font-size: 50px;
                 font-weight: 900;
                 line-height: 85%;
-                animation: rotate-span 1.5s forwards ease-in-out;
                 padding: 5px;
-                // animation-iteration-count: 1;
-                @media (max-width:1200px) {
+
+                @media (max-width: 1200px) {
                     font-size: 40px;
                 }
-                @media (max-width:992px) {
+                @media (max-width: 992px) {
                     font-size: 34px;
                 }
-                @media (max-width:768px) {
+                @media (max-width: 768px) {
                     font-size: 30px;
                 }
-                @media (max-width:576) {
+                @media (max-width: 576) {
                     font-size: 20px;
                 }
             }
@@ -83,18 +82,20 @@
                 background-image: url(/img/green-back.png);
             }
             &:nth-child(2) {
-                background: #FFB803;
+                background: #ffb803;
                 background-image: url(/img/orange-back.png);
-
             }
             &:nth-child(3) {
-                background: #EE3F3F;
+                background: #ee3f3f;
                 background-image: url(/img/red-back.png);
-
             }
 
             &:hover {
-                transform: scale(2);
+                animation: rotate-btn 1s forwards ease-in-out;
+
+                span {
+                    animation: rotate-span 1s forwards ease-in-out;
+                }
             }
         }
 
@@ -106,7 +107,6 @@
     }
     .wrapper__picture {
         position: relative;
-        
 
         img {
             z-index: 1;
@@ -117,40 +117,36 @@
     }
 }
 
-
 @keyframes rotate-btn {
     0% {
-    transform: rotate(0deg);
+        transform: rotate(0deg);
     }
-    25% {
-      transform: rotate(-18deg);
+    20% {
+        transform: rotate(-18deg);
     }
-    50% {
-      transform: rotate(0deg);
-      }
-      75% {
+
+    80% {
         transform: rotate(6deg);
-      }
-      100% {
-      transform: rotate(0deg);
-      }
     }
+    100% {
+        transform: rotate(0deg);
+    }
+}
 
 @keyframes rotate-span {
     0% {
-    transform: rotate(0deg);
+        transform: rotate(0deg);
     }
-    25% {
-      transform: rotate(24deg);
-      }
-      50% {
-      transform: rotate(0deg);
-      }
-      75% {
+    20% {
+        transform: rotate(24deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    80% {
         transform: rotate(-12deg);
-      }
-      100% {
-      transform: rotate(0deg);
-      }
     }
-    
+    100% {
+        transform: rotate(0deg);
+    }
+}
