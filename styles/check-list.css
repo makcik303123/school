@@ -96,9 +96,34 @@
   height: -moz-fit-content;
   height: fit-content;
   transition: 0.4s;
+  opacity: 1;
 }
 .check-list .selection-wrapper .selection-container .check-list__selection .selection__block .wrapper-item .block__item .item__name {
   max-width: 192px;
+}
+.check-list .selection-wrapper .selection-container .check-list__selection .selection__block .wrapper-item #open {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+.check-list .selection-wrapper .selection-container .check-list__selection .selection__block .wrapper-item #open .arrow {
+  margin-left: auto;
+  margin-right: 10px;
+  transform: rotate(-90deg);
+  transition: 0.3s;
+}
+.check-list .selection-wrapper .selection-container .check-list__selection .selection__block .wrapper-item #open:hover .arrow {
+  transform: translateY(7px) rotate(-90deg);
+}
+.check-list .selection-wrapper .selection-container .check-list__selection .selection__block .wrapper-item #open.active .arrow {
+  transform: rotate(90deg);
+}
+.check-list .selection-wrapper .selection-container .check-list__selection .selection__block .wrapper-item #open.active:hover .arrow {
+  transform: translateY(-7px) rotate(90deg);
 }
 @media (max-width: 992px) {
   .check-list .selection-wrapper .selection-container .check-list__selection .selection__block {

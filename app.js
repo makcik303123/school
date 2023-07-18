@@ -3,190 +3,185 @@ const hamburgerBody = document.querySelector("#menu__body");
 const body = document.querySelector("body");
 
 hamburgerBtn.addEventListener("click", () => {
-  hamburgerBtn.classList.toggle("active");
-  hamburgerBody.classList.toggle("active");
-  body.classList.toggle("lock");
+	hamburgerBtn.classList.toggle("active");
+	hamburgerBody.classList.toggle("active");
+	body.classList.toggle("lock");
 });
 
 hamburgerBody.querySelectorAll(".nav__link").forEach((link) => {
-  link.addEventListener("click", () => {
-    hamburgerBtn.classList.remove("active");
-    hamburgerBody.classList.remove("active");
-    body.classList.remove("lock");
-  });
+	link.addEventListener("click", () => {
+		hamburgerBtn.classList.remove("active");
+		hamburgerBody.classList.remove("active");
+		body.classList.remove("lock");
+	});
 });
 
-
-
-
-const  btnLeft = document.querySelector('#btnLeft')
-const  btnRight = document.querySelector('#btnRight')
-const  slider = document.querySelector('.slider__scroll')
-const  slides = document.querySelectorAll('.slide')
+const btnLeft = document.querySelector("#btnLeft");
+const btnRight = document.querySelector("#btnRight");
+const slider = document.querySelector(".slider__scroll");
+const slides = document.querySelectorAll(".slide");
 
 let position = 0;
 let activeSlide = 0;
 let slideToShow = 0;
 
+btnRight.addEventListener("click", () => {
+	checkWidth();
 
-btnRight.addEventListener('click', () => {
-  checkWidth ()
+	if (activeSlide + slideToShow !== slides.length) {
+		activeSlide++;
+	}
 
-  if (activeSlide + slideToShow !== slides.length) {
-  activeSlide++
-  }
+	createPosArray();
+});
 
-  createPosArray()
-  
-})
+btnLeft.addEventListener("click", () => {
+	checkWidth();
 
-btnLeft.addEventListener('click', () => {
-  checkWidth ()
+	if (activeSlide !== 0) {
+		activeSlide--;
+	}
 
-  if (activeSlide !== 0) {
-  activeSlide--
-  }
+	createPosArray();
+});
 
-  createPosArray()
-})
+function createPosArray() {
+	const arrPosition = [];
+	const gap = window.getComputedStyle(slider).gap.slice(0, -2);
+	const slideWidth = slides[0].offsetWidth;
 
-function createPosArray () {
-  const arrPosition = []
-  const gap = window.getComputedStyle(slider).gap.slice(0, -2)
-  const slideWidth = slides[0].offsetWidth;
+	for (let i = 0; i < slides.length; i++) {
+		if (i === 0) {
+			arrPosition.push(0);
+		} else {
+			arrPosition.push(-(slideWidth + +gap) * i);
+		}
+	}
 
-  for (let i = 0; i < slides.length; i++) {
-    if (i === 0) {
-      arrPosition.push(0)
-    } else {
-      arrPosition.push(-(slideWidth + +gap) * i)
-    } 
-  }
-
-  position = arrPosition[activeSlide]
-  slider.style.transform = `translateX(${position}px)`
+	position = arrPosition[activeSlide];
+	slider.style.transform = `translateX(${position}px)`;
 }
 
-function checkWidth () {
-  if (body.offsetWidth > 992) {
-    listToShow = 4
-  }
-  if (body.offsetWidth > 769) {
-    slideToShow = 3
-    listToShow = 3
-  }
-  if (body.offsetWidth >= 576 && body.offsetWidth <= 768) {
-    slideToShow = 2
-    listToShow = 2
-  }
-  if (body.offsetWidth < 576) {
-    slideToShow = 1
-  }
-  if (body.offsetWidth <= 460) {
-    listToShow = 1
-  }
+function checkWidth() {
+	if (body.offsetWidth > 992) {
+		listToShow = 4;
+	}
+	if (body.offsetWidth > 769) {
+		slideToShow = 3;
+		listToShow = 3;
+	}
+	if (body.offsetWidth >= 576 && body.offsetWidth <= 768) {
+		slideToShow = 2;
+		listToShow = 2;
+	}
+	if (body.offsetWidth < 576) {
+		slideToShow = 1;
+	}
+	if (body.offsetWidth <= 460) {
+		listToShow = 1;
+	}
 }
 
-
-
-
-
-const  btnLeftList = document.querySelector('#btnLeftList')
-const  btnRightList = document.querySelector('#btnRightList')
-const  selection = document.querySelector('.check-list__selection')
-const  lists = document.querySelectorAll('.selection__block')
+const btnLeftList = document.querySelector("#btnLeftList");
+const btnRightList = document.querySelector("#btnRightList");
+const selection = document.querySelector(".check-list__selection");
+const lists = document.querySelectorAll(".selection__block");
 
 let listToShow = 0;
 let activeList = 0;
 
-function changeCheckList () {
-  const arrPosition = []
-  const gap = window.getComputedStyle(selection).gap.slice(0, -2)
-  const listWidth = lists[0].offsetWidth;
+function changeCheckList() {
+	const arrPosition = [];
+	const gap = window.getComputedStyle(selection).gap.slice(0, -2);
+	const listWidth = lists[0].offsetWidth;
 
-  for (let i = 0; i < lists.length; i++) {
-    if (i === 0) {
-      arrPosition.push(0)
-    } else {
-      arrPosition.push(-(listWidth + +gap) * i)
-    } 
-  }
+	for (let i = 0; i < lists.length; i++) {
+		if (i === 0) {
+			arrPosition.push(0);
+		} else {
+			arrPosition.push(-(listWidth + +gap) * i);
+		}
+	}
 
-  position = arrPosition[activeList]
-  selection.style.transform = `translateX(${position}px)`
+	position = arrPosition[activeList];
+	selection.style.transform = `translateX(${position}px)`;
 }
 
-btnRightList.addEventListener('click', () => {
-  checkWidth ()
+btnRightList.addEventListener("click", () => {
+	checkWidth();
 
-  if (activeList + listToShow !== lists.length) {
-    activeList++
-    console.log(activeList, "active")
-    console.log(listToShow, "list")
-    console.log(lists.length)
-  }
+	if (activeList + listToShow !== lists.length) {
+		activeList++;
+		console.log(activeList, "active");
+		console.log(listToShow, "list");
+		console.log(lists.length);
+	}
 
-  changeCheckList()
-  
-})
+	changeCheckList();
+});
 
-btnLeftList.addEventListener('click', () => {
-  checkWidth ()
+btnLeftList.addEventListener("click", () => {
+	checkWidth();
 
-  if (activeList !== 0) {
-    activeList--
-  }
+	if (activeList !== 0) {
+		activeList--;
+	}
 
-  changeCheckList();
-})
+	changeCheckList();
+});
 
+checkWidth();
 
-checkWidth ()
+const wrappers = document.querySelectorAll(".wrapper-item");
+const spans = document.querySelectorAll("#open");
 
+const arrayListOpen = Array(wrappers.length).fill(false);
 
-console.log('work') 
+wrappers.forEach((wrapper) => {
+	const items = wrapper.querySelectorAll(".block__item");
+	for (let i = 0; i < items.length; i++) {
+		if (i > 4) {
+			items[i].style.height = "0px";
+			items[i].style.overflow = "hidden";
+			items[i].style.marginBottom = "0px";
+		}
+	}
+});
 
-const wrappers = document.querySelectorAll('.wrapper-item')
-const spans = document.querySelectorAll("#open")
+function hideItems(span, index) {
+	const items = span.parentNode.querySelectorAll(".block__item");
+	for (let i = 0; i < items.length; i++) {
+		if (i > 4) {
+			items[i].style.height = "0px";
+			items[i].style.overflow = "hidden";
+			items[i].style.marginBottom = "0px";
+			items[i].style.opacity = "0";
+		}
+	}
 
-const app = document.querySelector('.app')
-
-let open = false
-
-app.addEventListener('click', () => {
-  if (open === true) {
-    hideItems()
-    open = false
-  }
-})
-
-function hideItems () {
-  wrappers.forEach(wrapper => {
-    const items = wrapper.querySelectorAll(".block__item")
-    for (let i = 0; i < items.length; i++) {
-      if (i > 4) {
-        items[i].style.height = '0px'
-        items[i].style.overflow = 'hidden'
-        items[i].style.marginBottom = '0px'
-      }
-    }
-  })
+	span.classList.remove("active");
+	arrayListOpen[index] = false;
+	console.log(arrayListOpen);
 }
-hideItems()
 
-spans.forEach((span) => {
-  span.addEventListener('click', showItems)
-})
+spans.forEach((span, index) => {
+	span.addEventListener("click", () => {
+		arrayListOpen[index] === false
+			? showItems(span, index)
+			: hideItems(span, index);
+	});
+});
 
+function showItems(span, index) {
+	span.parentNode.querySelectorAll(".block__item").forEach((item) => {
+		item.style.removeProperty("height");
+		item.style.removeProperty("overflow");
+		item.style.marginBottom = "20px";
+		item.style.opacity = "1";
+	});
+	span.classList.add("active");
 
-function showItems() {
-  console.log(this.parentNode)
-  this.parentNode.querySelectorAll(".block__item").forEach(item => {
-    item.style.removeProperty('height')
-    item.style.removeProperty('overflow')
-    item.style.marginBottom = '20px'
-  })
-  setTimeout(() => {
-    open = true
-  }, 400)
+	arrayListOpen[index] = true;
+	console.log(arrayListOpen);
+	console.log(span.firstChild);
 }
