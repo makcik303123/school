@@ -16,10 +16,11 @@ hamburgerBody.querySelectorAll(".nav__link").forEach((link) => {
 	});
 });
 
-const btnLeft = document.querySelector("#btnLeft");
-const btnRight = document.querySelector("#btnRight");
-const slider = document.querySelector(".slider__scroll");
-const slides = document.querySelectorAll(".slide");
+const sectionInformation = document.querySelector(".information");
+const btnLeft = sectionInformation.querySelector("#btnLeft");
+const btnRight = sectionInformation.querySelector("#btnRight");
+const slider = sectionInformation.querySelector(".slider__scroll");
+const slides = sectionInformation.querySelectorAll(".slide");
 
 let position = 0;
 let activeSlide = 0;
@@ -112,9 +113,6 @@ btnRightList.addEventListener("click", () => {
 
 	if (activeList + listToShow !== lists.length) {
 		activeList++;
-		console.log(activeList, "active");
-		console.log(listToShow, "list");
-		console.log(lists.length);
 	}
 
 	changeCheckList();
@@ -161,7 +159,6 @@ function hideItems(span, index) {
 
 	span.classList.remove("active");
 	arrayListOpen[index] = false;
-	console.log(arrayListOpen);
 }
 
 spans.forEach((span, index) => {
@@ -182,6 +179,62 @@ function showItems(span, index) {
 	span.classList.add("active");
 
 	arrayListOpen[index] = true;
-	console.log(arrayListOpen);
-	console.log(span.firstChild);
+}
+
+const sectionProduct = document.querySelector(".product");
+const btnLeftP = sectionProduct.querySelector("#btnLeftSlideProduct");
+const btnRightP = sectionProduct.querySelector("#btnRightSlideProduct");
+const sliderP = sectionProduct.querySelector(".slider__scroll");
+const slidesP = sectionProduct.querySelectorAll(".slide");
+
+let positionP = 0;
+let activeSlideP = 0;
+let slideToShowP = 2;
+
+btnRightP.addEventListener("click", () => {
+	widthForProduct();
+
+	if (activeSlideP + slideToShowP !== slidesP.length) {
+		activeSlideP++;
+	}
+
+	createPosArrayP();
+});
+
+btnLeftP.addEventListener("click", () => {
+	widthForProduct();
+
+	if (activeSlideP !== 0) {
+		activeSlideP--;
+	}
+
+	createPosArrayP();
+});
+
+function createPosArrayP() {
+	const arrPosition = [];
+	const gap = window.getComputedStyle(sliderP).gap.slice(0, -2);
+	const slideWidth = slidesP[0].offsetWidth;
+
+	for (let i = 0; i < slidesP.length; i++) {
+		if (i === 0) {
+			arrPosition.push(0);
+		} else {
+			arrPosition.push(-(slideWidth + +gap) * i);
+		}
+	}
+
+	positionP = arrPosition[activeSlideP];
+	sliderP.style.transform = `translateX(${positionP}px)`;
+}
+
+function widthForProduct() {
+	if (
+		(body.offsetWidth < 1200 && body.offsetWidth >= 768) ||
+		body.offsetWidth <= 460
+	) {
+		slideToShowP = 1;
+	} else {
+		slideToShowP = 2;
+	}
 }
