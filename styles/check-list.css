@@ -111,8 +111,7 @@
   width: 100%;
 }
 .check-list .selection-wrapper .selection-container .check-list__selection .selection__block .wrapper-item #open .arrow {
-  margin-left: auto;
-  margin-right: 10px;
+  margin: 0 auto;
   transform: rotate(-90deg);
   transition: 0.3s;
 }
