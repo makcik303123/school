@@ -140,49 +140,55 @@
     min-width: 100%;
   }
 }
-.check-list .selection-wrapper .slider__arrow {
-  cursor: pointer;
+.check-list .selection-wrapper .arrow__wrapper {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: -30px;
+  top: calc(50% - 30px);
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+}
+.check-list .selection-wrapper .arrow__wrapper .slider__arrow {
+  position: relative;
   z-index: 2;
   display: flex;
   align-items: center;
   justify-content: center;
-  left: -25px;
-  top: calc(50% - 25px);
   width: 50px;
   height: 50px;
   background-color: #fff;
   border-radius: 50%;
   transition: 0.2s;
 }
-.check-list .selection-wrapper .slider__arrow:nth-last-child(1) {
-  left: initial;
-  right: -25px;
-}
-.check-list .selection-wrapper .slider__arrow:nth-last-child(1) img {
-  transform: rotate(180deg);
-}
-.check-list .selection-wrapper .slider__arrow:nth-last-child(1):hover {
-  left: initial;
-  background-color: #b1b1b1;
-  transform: translateX(5px);
-}
-.check-list .selection-wrapper .slider__arrow:hover {
-  background-color: #b1b1b1;
-  transform: translateX(-5px);
-}
 @media (max-width: 1200px) {
-  .check-list .selection-wrapper .slider__arrow {
+  .check-list .selection-wrapper .arrow__wrapper .slider__arrow {
     transform: scale(0.85);
   }
 }
 @media (max-width: 992px) {
-  .check-list .selection-wrapper .slider__arrow {
+  .check-list .selection-wrapper .arrow__wrapper .slider__arrow {
     transform: scale(0.75);
   }
 }
 @media (min-width: 993px) {
-  .check-list .selection-wrapper .slider__arrow {
+  .check-list .selection-wrapper .arrow__wrapper .slider__arrow {
     display: none;
   }
+}
+.check-list .selection-wrapper .arrow__wrapper:hover .slider__arrow {
+  background-color: #b1b1b1;
+  transform: scale(1);
+}
+.check-list .selection-wrapper .arrow__wrapper:nth-last-child(1) {
+  left: initial;
+  right: -30px;
+}
+.check-list .selection-wrapper .arrow__wrapper:nth-last-child(1) img {
+  transform: rotate(180deg);
+}
+.check-list .selection-wrapper .arrow__wrapper:nth-last-child(1):hover .slider__arrow {
+  background-color: #b1b1b1;
 }/*# sourceMappingURL=check-list.css.map */
