@@ -48,7 +48,7 @@ btnLeft.addEventListener("click", () => {
 
 function createPosArray() {
   const arrPosition = [];
-  const gap = window.getComputedStyle(slider).gap.slice(0, -2);
+  const gap = window.getComputedStyle(slider).gap.slice(0, 2);
   const slideWidth = slides[0].offsetWidth;
 
   for (let i = 0; i < slides.length; i++) {
@@ -95,7 +95,7 @@ let pos1;
 
 function changeCheckList() {
   const arrPosition = [];
-  const gap = window.getComputedStyle(selection).gap.slice(0, -2);
+  const gap = window.getComputedStyle(selection).gap.slice(0, 2);
   const listWidth = lists[0].offsetWidth;
 
   for (let i = 0; i < lists.length; i++) {
@@ -242,7 +242,7 @@ btnLeftP.addEventListener("click", () => {
 
 function createPosArrayP() {
   const arrPosition = [];
-  const gap = window.getComputedStyle(sliderP).gap.slice(0, -2);
+  const gap = window.getComputedStyle(sliderP).gap.slice(0, 2);
   const slideWidth = slidesP[0].offsetWidth;
 
   for (let i = 0; i < slidesP.length; i++) {
