@@ -15,6 +15,11 @@
 		<link rel="stylesheet" href="styles/information.css" />
 		<link rel="stylesheet" href="styles/psychologist.css" />
 		<link rel="stylesheet" href="styles/product.css" />
+		<link rel="stylesheet" href="styles/swiper.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+		/>
 	</head>
 	<body>
 		<div class="app">
@@ -63,14 +68,27 @@
 							alt="school-suplies"
 						/>
 						<div class="advantages__promo container">
-							<img
-								height="104"
-								width="104"
-								class="promo__star"
-								src="/img/star.png"
-								alt="star"
-							/>
-							<img src="/img/promo.png" alt="promo" />
+							<div class="swiper">
+								<!-- Additional required wrapper -->
+								<div class="swiper-wrapper">
+									<!-- Slides -->
+									<div class="swiper-slide">
+										<img src="/img/promo.png" alt="promo" />
+									</div>
+									<div class="swiper-slide">
+										<img src="/img/promo.png" alt="promo" />
+									</div>
+									<div class="swiper-slide">
+										<img src="/img/promo.png" alt="promo" />
+									</div>
+								</div>
+								<!-- If we need pagination -->
+								<div class="swiper-pagination"></div>
+
+								<!-- If we need navigation buttons -->
+								<div class="swiper-button-prev"></div>
+								<div class="swiper-button-next"></div>
+							</div>
 						</div>
 						<div class="wrapper__picture">
 							<img width="20%" src="/img/straightedge.png" alt="straightedge" />
@@ -608,4 +626,5 @@
 		</div>
 	</body>
 	<script type="module" src="app.js"></script>
+	<script type="module" src="FirstSlider.js"></script>
 </html>

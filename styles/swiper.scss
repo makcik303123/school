@@ -1,0 +1,28 @@
+.swiper {
+	.swiper-button-prev {
+		color: #ffc800;
+		transition: 0.2s;
+
+		&:hover {
+			color: #ffc800c0;
+		}
+	}
+	.swiper-button-next {
+		color: #ffc800;
+		transition: 0.2s;
+		&:hover {
+			color: #ffc800c0;
+		}
+	}
+	.swiper-pagination {
+		.swiper-pagination-bullet {
+			width: 10px;
+			height: 10px;
+			background: #ffc800;
+			opacity: 0.5;
+			&.swiper-pagination-bullet-active {
+				opacity: 1;
+			}
+		}
+	}
+}

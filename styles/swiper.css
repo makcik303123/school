@@ -1,0 +1,23 @@
+.swiper .swiper-button-prev {
+  color: #ffc800;
+  transition: 0.2s;
+}
+.swiper .swiper-button-prev:hover {
+  color: rgba(255, 200, 0, 0.7529411765);
+}
+.swiper .swiper-button-next {
+  color: #ffc800;
+  transition: 0.2s;
+}
+.swiper .swiper-button-next:hover {
+  color: rgba(255, 200, 0, 0.7529411765);
+}
+.swiper .swiper-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #ffc800;
+  opacity: 0.5;
+}
+.swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  opacity: 1;
+}/*# sourceMappingURL=swiper.css.map */
