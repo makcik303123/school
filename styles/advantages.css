@@ -103,10 +103,10 @@
   background-size: cover;
 }
 .advantages .advantages__blocks .blocks__button:hover {
-  animation: rotate-btn 1s forwards ease-in-out;
+  animation: rotate-btn 0.8s forwards ease-in-out;
 }
 .advantages .advantages__blocks .blocks__button:hover span {
-  animation: rotate-span 1s forwards ease-in-out;
+  animation: rotate-span 0.8s forwards ease-in-out;
 }
 .advantages .wrapper__picture {
   position: relative;
@@ -122,10 +122,10 @@
   0% {
     transform: rotate(0deg);
   }
-  20% {
+  37% {
     transform: rotate(-18deg);
   }
-  80% {
+  87% {
     transform: rotate(6deg);
   }
   100% {
@@ -136,13 +136,13 @@
   0% {
     transform: rotate(0deg);
   }
-  20% {
+  33% {
     transform: rotate(24deg);
   }
   50% {
     transform: rotate(0deg);
   }
-  80% {
+  83% {
     transform: rotate(-12deg);
   }
   100% {
