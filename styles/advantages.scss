@@ -1,152 +1,149 @@
 .advantages {
-    position: relative;
-    z-index: 2;
+	position: relative;
+	z-index: 2;
 
-    .advantages__suplies {
-        position: absolute;
-        left: 0;
-        width: 12%;
-    }
-    .advantages__promo {
-        position: relative;
-        height: fit-content;
+	.advantages__suplies {
+		position: absolute;
+		left: 0;
+		width: 12%;
+	}
+	.advantages__promo {
+		position: relative;
+		height: fit-content;
 
-        .promo__star {
-            position: absolute;
-            right: -2%;
-            width: 8%;
+		.promo__star {
+			position: absolute;
+			right: -2%;
+			width: 8%;
 
-            @media (max-width: 992px) {
-                right: 0;
-            }
-        }
-    }
+			@media (max-width: 992px) {
+				right: 0;
+			}
+		}
+	}
 
-    .advantages__blocks {
-        display: flex;
-        flex-direction: row;
-        gap: 23px;
-        padding-top: 30px;
-        padding-bottom: 30px;
+	.advantages__blocks {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 23px;
+		padding-top: 30px;
+		padding-bottom: 30px;
 
-        .blocks__button {
-            width: calc(33% - 15.3px);
-            height: 188px;
-            border-radius: 50px;
-            background-size: cover;
-            color: #fff;
-            text-align: center;
+		.blocks__button {
+			width: calc(25% - 17.3px);
+			height: 188px;
+			border-radius: 50px;
+			background-size: cover;
+			color: #fff;
+			text-align: center;
 
-            cursor: pointer;
-            transform: scale(1);
-            position: relative;
-            z-index: 2;
+			cursor: pointer;
+			transform: scale(1);
+			position: relative;
+			z-index: 2;
 
-            @media (max-width: 1200px) {
-                height: 150px;
-            }
-            @media (max-width: 992px) {
-                height: 120px;
-            }
-            @media (max-width: 768px) {
-                width: 75%;
-            }
-            @media (max-width: 458px) {
-                width: 97%;
-            }
+			@media (max-width: 1200px) {
+				width: calc(50% - 23px);
+				height: 150px;
+			}
+			@media (max-width: 992px) {
+				height: 120px;
+			}
+			@media (max-width: 458px) {
+				width: 97%;
+			}
 
-            span {
-                display: block;
-                font-family: Cera Condensed Pro;
-                font-size: 50px;
-                font-weight: 900;
-                line-height: 85%;
-                padding: 5px;
+			span {
+				display: block;
+				font-family: Cera Condensed Pro;
+				font-size: 50px;
+				font-weight: 900;
+				line-height: 85%;
+				padding: 5px;
 
-                @media (max-width: 1200px) {
-                    font-size: 40px;
-                }
-                @media (max-width: 992px) {
-                    font-size: 34px;
-                }
-                @media (max-width: 768px) {
-                    font-size: 30px;
-                }
-                @media (max-width: 576) {
-                    font-size: 20px;
-                }
-            }
+				@media (max-width: 1200px) {
+					font-size: 40px;
+				}
+				@media (max-width: 992px) {
+					font-size: 34px;
+				}
+				@media (max-width: 768px) {
+					font-size: 30px;
+				}
+				@media (max-width: 576) {
+					font-size: 20px;
+				}
+			}
 
-            &:nth-child(1) {
-                background: #5fdc64;
-                background-image: url(/img/green-back.png);
-            }
-            &:nth-child(2) {
-                background: #ffb803;
-                background-image: url(/img/orange-back.png);
-            }
-            &:nth-child(3) {
-                background: #ee3f3f;
-                background-image: url(/img/red-back.png);
-            }
+			&:nth-child(1) {
+				background: url(/img/green-back.png) center;
+				background-size: cover;
+			}
+			&:nth-child(2) {
+				background: url(/img/orange-back.png) center;
+				background-size: cover;
+			}
+			&:nth-child(3) {
+				background: url(/img/red-back.png) center;
+				background-size: cover;
+			}
+			&:nth-child(4) {
+				background: url(/img/flower-back.png) center;
+				background-size: cover;
+			}
 
-            &:hover {
-                animation: rotate-btn 1s forwards ease-in-out;
+			&:hover {
+				animation: rotate-btn 1s forwards ease-in-out;
 
-                span {
-                    animation: rotate-span 1s forwards ease-in-out;
-                }
-            }
-        }
+				span {
+					animation: rotate-span 1s forwards ease-in-out;
+				}
+			}
+		}
+	}
+	.wrapper__picture {
+		position: relative;
 
-        @media (max-width: 768px) {
-            flex-direction: column;
-            align-items: center;
-            gap: 40px;
-        }
-    }
-    .wrapper__picture {
-        position: relative;
-
-        img {
-            z-index: 1;
-            position: absolute;
-            top: 0;
-            right: 0;
-        }
-    }
+		img {
+			z-index: 1;
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+	}
 }
 
 @keyframes rotate-btn {
-    0% {
-        transform: rotate(0deg);
-    }
-    20% {
-        transform: rotate(-18deg);
-    }
+	0% {
+		transform: rotate(0deg);
+	}
+	20% {
+		transform: rotate(-18deg);
+	}
 
-    80% {
-        transform: rotate(6deg);
-    }
-    100% {
-        transform: rotate(0deg);
-    }
+	80% {
+		transform: rotate(6deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
 }
 
 @keyframes rotate-span {
-    0% {
-        transform: rotate(0deg);
-    }
-    20% {
-        transform: rotate(24deg);
-    }
-    50% {
-        transform: rotate(0deg);
-    }
-    80% {
-        transform: rotate(-12deg);
-    }
-    100% {
-        transform: rotate(0deg);
-    }
+	0% {
+		transform: rotate(0deg);
+	}
+	20% {
+		transform: rotate(24deg);
+	}
+	50% {
+		transform: rotate(0deg);
+	}
+	80% {
+		transform: rotate(-12deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
 }

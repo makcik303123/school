@@ -1,9 +1,18 @@
+.swiper {
+  overflow: initial !important;
+  overflow-x: clip !important;
+}
 .swiper .swiper-button-prev {
   color: #ffc800;
   transition: 0.2s;
 }
 .swiper .swiper-button-prev:hover {
   color: rgba(255, 200, 0, 0.7529411765);
+}
+@media (max-width: 998px) {
+  .swiper .swiper-button-prev {
+    display: none;
+  }
 }
 .swiper .swiper-button-next {
   color: #ffc800;
@@ -12,12 +21,36 @@
 .swiper .swiper-button-next:hover {
   color: rgba(255, 200, 0, 0.7529411765);
 }
+@media (max-width: 998px) {
+  .swiper .swiper-button-next {
+    display: none;
+  }
+}
+.swiper .swiper-pagination {
+  margin-bottom: -50px;
+}
 .swiper .swiper-pagination .swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
   background: #ffc800;
   opacity: 0.5;
 }
 .swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   opacity: 1;
+}
+@media (max-width: 998px) {
+  .swiper .swiper-pagination .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+  }
+}
+@media (max-width: 998px) {
+  .swiper .swiper-pagination {
+    margin-bottom: -5vw;
+  }
+}
+@media (max-width: 768px) {
+  .swiper .swiper-pagination {
+    margin-bottom: -7vw;
+  }
 }/*# sourceMappingURL=swiper.css.map */

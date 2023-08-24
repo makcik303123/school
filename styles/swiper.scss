@@ -1,10 +1,15 @@
 .swiper {
+	overflow: initial !important;
+	overflow-x: clip !important;
 	.swiper-button-prev {
 		color: #ffc800;
 		transition: 0.2s;
 
 		&:hover {
 			color: #ffc800c0;
+		}
+		@media (max-width: 998px) {
+			display: none;
 		}
 	}
 	.swiper-button-next {
@@ -13,16 +18,30 @@
 		&:hover {
 			color: #ffc800c0;
 		}
+		@media (max-width: 998px) {
+			display: none;
+		}
 	}
 	.swiper-pagination {
+		margin-bottom: -50px;
 		.swiper-pagination-bullet {
-			width: 10px;
-			height: 10px;
+			width: 20px;
+			height: 20px;
 			background: #ffc800;
 			opacity: 0.5;
 			&.swiper-pagination-bullet-active {
 				opacity: 1;
 			}
+			@media (max-width: 998px) {
+				width: 10px;
+				height: 10px;
+			}
+		}
+		@media (max-width: 998px) {
+			margin-bottom: -5vw;
+		}
+		@media (max-width: 768px) {
+			margin-bottom: -7vw;
 		}
 	}
 }

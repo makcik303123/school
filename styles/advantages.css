@@ -25,12 +25,13 @@
 .advantages .advantages__blocks {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 23px;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 .advantages .advantages__blocks .blocks__button {
-  width: calc(33% - 15.3px);
+  width: calc(25% - 17.3px);
   height: 188px;
   border-radius: 50px;
   background-size: cover;
@@ -43,17 +44,13 @@
 }
 @media (max-width: 1200px) {
   .advantages .advantages__blocks .blocks__button {
+    width: calc(50% - 23px);
     height: 150px;
   }
 }
 @media (max-width: 992px) {
   .advantages .advantages__blocks .blocks__button {
     height: 120px;
-  }
-}
-@media (max-width: 768px) {
-  .advantages .advantages__blocks .blocks__button {
-    width: 75%;
   }
 }
 @media (max-width: 458px) {
@@ -90,29 +87,26 @@
   }
 }
 .advantages .advantages__blocks .blocks__button:nth-child(1) {
-  background: #5fdc64;
-  background-image: url(/img/green-back.png);
+  background: url(/img/green-back.png) center;
+  background-size: cover;
 }
 .advantages .advantages__blocks .blocks__button:nth-child(2) {
-  background: #ffb803;
-  background-image: url(/img/orange-back.png);
+  background: url(/img/orange-back.png) center;
+  background-size: cover;
 }
 .advantages .advantages__blocks .blocks__button:nth-child(3) {
-  background: #ee3f3f;
-  background-image: url(/img/red-back.png);
+  background: url(/img/red-back.png) center;
+  background-size: cover;
+}
+.advantages .advantages__blocks .blocks__button:nth-child(4) {
+  background: url(/img/flower-back.png) center;
+  background-size: cover;
 }
 .advantages .advantages__blocks .blocks__button:hover {
   animation: rotate-btn 1s forwards ease-in-out;
 }
 .advantages .advantages__blocks .blocks__button:hover span {
   animation: rotate-span 1s forwards ease-in-out;
-}
-@media (max-width: 768px) {
-  .advantages .advantages__blocks {
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-  }
 }
 .advantages .wrapper__picture {
   position: relative;
