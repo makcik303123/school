@@ -25,37 +25,40 @@
 		<div class="app">
 			<div class="wrapper">
 				<header class="header container">
-					<div class="header__menu menu">
-						<nav id="menu__body" class="menu__body">
-							<ul class="header__nav">
-								<li class="nav__item">
-									<a class="nav__link" href="#">Каталог</a>
-								</li>
-								<li class="nav__item">
-									<a class="nav__link" href="#">Чек-листы</a>
-								</li>
-								<li class="nav__item">
-									<a class="nav__link" href="#">Шаблоны</a>
-								</li>
-								<li class="nav__item">
-									<a class="nav__link" href="#">Подборки товаров</a>
-								</li>
-								<li class="nav__item">
-									<a class="nav__link" href="#">Статьи</a>
-								</li>
-								<li class="nav__item">
-									<a class="nav__link" href="#">Психолог</a>
-								</li>
-								<li class="nav__item">
-									<a class="nav__link" href="#">Цветы</a>
-								</li>
-							</ul>
-						</nav>
-						<div id="wrapper__icon" class="wrapper__icon">
-							<div class="menu__icon">
-								<span></span>
-								<span></span>
-								<span></span>
+					<div class="header__wrapper">
+						<a href="https://evroopt.by" class="header__logo">
+							<img width="222" height="57" src="./img/logo.svg" alt="logo" />
+						</a>
+						<div class="header__menu menu">
+							<nav id="menu__body" class="menu__body">
+								<ul class="header__nav">
+									<li class="nav__item">
+										<a class="nav__link" href="#catalog">Каталог</a>
+									</li>
+									<li class="nav__item">
+										<a class="nav__link" href="#checklist">Чек-листы</a>
+									</li>
+									<li class="nav__item">
+										<a class="nav__link" href="#template">Шаблоны</a>
+									</li>
+									<li class="nav__item">
+										<a class="nav__link" href="#information">Статьи</a>
+									</li>
+									<li class="nav__item">
+										<a class="nav__link" href="#">Подборки товаров</a>
+									</li>
+
+									<!-- <li class="nav__item">
+										<a class="nav__link" href="#">Цветы</a>
+									</li> -->
+								</ul>
+							</nav>
+							<div id="wrapper__icon" class="wrapper__icon">
+								<div class="menu__icon">
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -73,13 +76,13 @@
 								<div class="swiper-wrapper">
 									<!-- Slides -->
 									<div class="swiper-slide">
-										<img src="/img/promo.png" alt="promo" />
+										<img src="/img/promo_1.png" alt="promo" />
 									</div>
 									<div class="swiper-slide">
-										<img src="/img/promo.png" alt="promo" />
+										<img src="/img/promo_1.png" alt="promo" />
 									</div>
 									<div class="swiper-slide">
-										<img src="/img/promo.png" alt="promo" />
+										<img src="/img/promo_1.png" alt="promo" />
 									</div>
 								</div>
 								<!-- If we need pagination -->
@@ -93,44 +96,80 @@
 						<div class="wrapper__picture">
 							<img width="20%" src="/img/straightedge.png" alt="straightedge" />
 						</div>
-						<div class="advantages__blocks container">
-							<button class="blocks__button">
-								<span
-									>Общение<br />
-									с психологом</span
-								>
-							</button>
-							<button class="blocks__button">
-								<span>Чек-листы <br />для заботливых родителей</span>
-							</button>
-							<button class="blocks__button">
-								<span
-									>Ништяки<br />
-									для школы</span
-								>
-							</button>
-							<button class="blocks__button">
-								<span
-									>Букеты<br />
-									к 1 сентября</span
-								>
-							</button>
-						</div>
 					</section>
-					<section class="catalog container">
+					<section id="catalog" class="catalog container">
 						<article class="catalog__article">
 							<h2 class="article__title">Каталог товаров</h2>
 							<p class="article__paragraph">
 								Все что нужно для подготовки к школе вы найдете у нас в
 								каталоге!
 							</p>
-							<button class="button">Перейти в каталог</button>
+
+							<div class="fields">
+								<div class="fields__item">
+									<div class="item__img">
+										<img src="./img/item_1.png" alt="item" />
+									</div>
+									<div class="item__info">
+										<div class="info__header">
+											<div class="info__title">ФЛОМАСТЕРЫ</div>
+											<div class="info__subtitle">Hanz Köger, 6 цветов</div>
+										</div>
+										<div class="info__price">1.49 руб.</div>
+									</div>
+								</div>
+								<div class="fields__item">
+									<div class="item__img">
+										<img src="./img/item_2.png" alt="item" />
+									</div>
+									<div class="item__info">
+										<div class="info__header">
+											<div class="info__title">ФЛОМАСТЕРЫ</div>
+											<div class="info__subtitle">Hanz Köger, 6 цветов</div>
+										</div>
+										<div class="info__price">1.49 руб.</div>
+									</div>
+								</div>
+								<div class="fields__item">
+									<div class="item__img">
+										<img src="./img/item_3.png" alt="item" />
+									</div>
+									<div class="item__info">
+										<div class="info__header">
+											<div class="info__title">ФЛОМАСТЕРЫ</div>
+											<div class="info__subtitle">Hanz Köger, 6 цветов</div>
+										</div>
+										<div class="info__price">1.49 руб.</div>
+									</div>
+								</div>
+								<a class="fields__item" href="#" target="_blank">
+									<div>
+										<div class="last__item">
+											<div class="last__item__text">
+												Ещё<br />
+												больше<br />
+												товаров<br />
+												у нас в<br />каталоге
+											</div>
+											<div class="last__item__circle">
+												<img
+													width="38.4"
+													height="38.4"
+													src="./img/icon/Arrow.svg"
+													alt="arrow"
+												/>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+
+							<a href="#"
+								><button class="button">
+									Смотреть весь каталог товаров
+								</button></a
+							>
 						</article>
-						<img
-							class="catalog__picture"
-							src="/img/catalog.png"
-							alt="catalog"
-						/>
 					</section>
 					<div class="wrapper__picture">
 						<img class="picture__globe" src="/img/globe.png" alt="globe" />
@@ -140,247 +179,56 @@
 							alt="big-star"
 						/>
 					</div>
-					<section class="check-list container">
+					<section id="checklist" class="check-list container">
 						<article class="check-list__article">
-							<h2 class="article__title">
-								Чек-листы <br />
-								для заботливых родителей
-							</h2>
+							<h2 class="article__title">Удобные чек-листы!</h2>
 							<p class="article__paragraph">
-								Перечень школьных товаров, рекомендуемых Министерством
-								Образования РБ
+								Скачивайте готовые чек-листы для детей с 1 по 11 классы
 							</p>
 						</article>
-						<div class="selection-wrapper">
-							<div class="selection-container">
-								<div class="check-list__selection">
-									<div class="selection__block">
-										<div class="block__class">1 класс</div>
-										<div class="wrapper-item">
-											<div class="block__item">
-												<img src="/img/icon/checkbox.svg" alt="checkbox" />
-												<div class="item__name">Ранец / Рюкзак</div>
-											</div>
-											<div class="block__item">
-												<img src="/img/icon/checkbox.svg" alt="checkbox" />
-												<div class="item__name">Школьная форма</div>
-											</div>
-											<div class="block__item">
-												<img src="/img/icon/checkbox.svg" alt="checkbox" />
-												<div class="item__name">Спортивная форма</div>
-											</div>
-											<div class="block__item">
-												<img src="/img/icon/checkbox.svg" alt="checkbox" />
-												<div class="item__name">Обувь сменная</div>
-											</div>
-											<div class="block__item">
-												<img src="/img/icon/checkbox.svg" alt="checkbox" />
-												<div class="item__name">Мешок для сменной обуви</div>
-											</div>
-											<div class="block__item">
-												<img src="/img/icon/checkbox.svg" alt="checkbox" />
-												<div class="item__name">Обувь сменная</div>
-											</div>
-											<div class="block__item">
-												<img src="/img/icon/checkbox.svg" alt="checkbox" />
-												<div class="item__name">Мешок для сменной обуви</div>
-											</div>
-											<span id="open"
-												><svg
-													class="arrow"
-													width="24"
-													height="24"
-													viewBox="0 0 24 24"
-													fill="none"
-													xmlns="http://www.w3.org/2000/svg"
-												>
-													<path
-														d="M15.5 19L8.5 12L15.5 5"
-														stroke="#FFF"
-														stroke-width="2.5"
-														stroke-linecap="round"
-														stroke-linejoin="round"
-													/>
-												</svg>
-											</span>
-										</div>
-
-										<button class="button">Скачать чек-лист</button>
-									</div>
-									<div class="selection__block">
-										<div class="block__class">2-4 классы</div>
-										<div class="wrapper-item">
-											<div class="block__item">
-												<img src="/img/icon/checkbox.svg" alt="checkbox" />
-												<div class="item__name">Ранец / Рюкзак</div>
-											</div>
-											<div class="block__item">
-												<img src="/img/icon/checkbox.svg" alt="checkbox" />
-												<div class="item__name">Школьная форма</div>
-											</div>
-											<div class="block__item">
-												<img src="/img/icon/checkbox.svg" alt="checkbox" />
-												<div class="item__name">Спортивная форма</div>
-											</div>
-											<div class="block__item">
-												<img src="/img/icon/checkbox.svg" alt="checkbox" />
-												<div class="item__name">Обувь сменная</div>
-											</div>
-											<div class="block__item">
-												<img src="/img/icon/checkbox.svg" alt="checkbox" />
-												<div class="item__name">Мешок для сменной обуви</div>
-											</div>
-											<div class="block__item">
-												<img src="/img/icon/checkbox.svg" alt="checkbox" />
-												<div class="item__name">Обувь сменная</div>
-											</div>
-											<div class="block__item">
-												<img src="/img/icon/checkbox.svg" alt="checkbox" />
-												<div class="item__name">Мешок для сменной обуви</div>
-											</div>
-											<span id="open"
-												><svg
-													class="arrow"
-													width="24"
-													height="24"
-													viewBox="0 0 24 24"
-													fill="none"
-													xmlns="http://www.w3.org/2000/svg"
-												>
-													<path
-														d="M15.5 19L8.5 12L15.5 5"
-														stroke="#FFF"
-														stroke-width="2.5"
-														stroke-linecap="round"
-														stroke-linejoin="round"
-													/>
-												</svg>
-											</span>
-										</div>
-										<button class="button">Скачать чек-лист</button>
-									</div>
-									<div class="selection__block">
-										<div class="block__class">5-9 классы</div>
-										<div class="wrapper-item">
-											<div class="block__item">
-												<img src="/img/icon/checkbox.svg" alt="checkbox" />
-												<div class="item__name">Ранец / Рюкзак</div>
-											</div>
-											<div class="block__item">
-												<img src="/img/icon/checkbox.svg" alt="checkbox" />
-												<div class="item__name">Школьная форма</div>
-											</div>
-											<div class="block__item">
-												<img src="/img/icon/checkbox.svg" alt="checkbox" />
-												<div class="item__name">Спортивная форма</div>
-											</div>
-											<div class="block__item">
-												<img src="/img/icon/checkbox.svg" alt="checkbox" />
-												<div class="item__name">Обувь сменная</div>
-											</div>
-											<div class="block__item">
-												<img src="/img/icon/checkbox.svg" alt="checkbox" />
-												<div class="item__name">Мешок для сменной обуви</div>
-											</div>
-											<div class="block__item">
-												<img src="/img/icon/checkbox.svg" alt="checkbox" />
-												<div class="item__name">Обувь сменная</div>
-											</div>
-											<div class="block__item">
-												<img src="/img/icon/checkbox.svg" alt="checkbox" />
-												<div class="item__name">Мешок для сменной обуви</div>
-											</div>
-											<span id="open"
-												><svg
-													class="arrow"
-													width="24"
-													height="24"
-													viewBox="0 0 24 24"
-													fill="none"
-													xmlns="http://www.w3.org/2000/svg"
-												>
-													<path
-														d="M15.5 19L8.5 12L15.5 5"
-														stroke="#FFF"
-														stroke-width="2.5"
-														stroke-linecap="round"
-														stroke-linejoin="round"
-													/>
-												</svg>
-											</span>
-										</div>
-										<button class="button">Скачать чек-лист</button>
-									</div>
-									<div class="selection__block">
-										<div class="block__class">10-11 классы</div>
-										<div class="wrapper-item">
-											<div class="block__item">
-												<img src="/img/icon/checkbox.svg" alt="checkbox" />
-												<div class="item__name">Ранец / Рюкзак</div>
-											</div>
-											<div class="block__item">
-												<img src="/img/icon/checkbox.svg" alt="checkbox" />
-												<div class="item__name">Школьная форма</div>
-											</div>
-											<div class="block__item">
-												<img src="/img/icon/checkbox.svg" alt="checkbox" />
-												<div class="item__name">Спортивная форма</div>
-											</div>
-											<div class="block__item">
-												<img src="/img/icon/checkbox.svg" alt="checkbox" />
-												<div class="item__name">Обувь сменная</div>
-											</div>
-											<div class="block__item">
-												<img src="/img/icon/checkbox.svg" alt="checkbox" />
-												<div class="item__name">Мешок для сменной обуви</div>
-											</div>
-											<div class="block__item">
-												<img src="/img/icon/checkbox.svg" alt="checkbox" />
-												<div class="item__name">Обувь сменная</div>
-											</div>
-											<div class="block__item">
-												<img src="/img/icon/checkbox.svg" alt="checkbox" />
-												<div class="item__name">Мешок для сменной обуви</div>
-											</div>
-											<span id="open"
-												><svg
-													class="arrow"
-													width="24"
-													height="24"
-													viewBox="0 0 24 24"
-													fill="none"
-													xmlns="http://www.w3.org/2000/svg"
-												>
-													<path
-														d="M15.5 19L8.5 12L15.5 5"
-														stroke="#FFF"
-														stroke-width="2.5"
-														stroke-linecap="round"
-														stroke-linejoin="round"
-													/>
-												</svg>
-											</span>
-										</div>
-
-										<button class="button">Скачать чек-лист</button>
-									</div>
+						<div class="checklist__container">
+							<div class="checklist__item">
+								<div class="item__img">
+									<img src="./img/checklist_1.png" alt="checklist" />
 								</div>
+								<a href="">
+									<button class="button">Скачать чек-лист</button>
+								</a>
 							</div>
-							<div id="btnLeftList" class="arrow__wrapper">
-								<div class="slider__arrow">
-									<img src="/img/icon/Arrow.svg" alt="Arrow" />
+							<div class="checklist__item">
+								<div class="item__img">
+									<img src="./img/checklist_2.png" alt="checklist" />
 								</div>
+								<a href="">
+									<button class="button">Скачать чек-лист</button>
+								</a>
 							</div>
-							<div id="btnRightList" class="arrow__wrapper">
-								<div class="slider__arrow">
-									<img src="/img/icon/Arrow.svg" alt="Arrow" />
+							<div class="checklist__item">
+								<div class="item__img">
+									<img src="./img/checklist_3.png" alt="checklist" />
 								</div>
+								<a href="">
+									<button class="button">Скачать чек-лист</button>
+								</a>
+							</div>
+							<div class="checklist__item">
+								<div class="item__img">
+									<img src="./img/checklist_4.png" alt="checklist" />
+								</div>
+								<a href="">
+									<button class="button">Скачать чек-лист</button>
+								</a>
 							</div>
 						</div>
 					</section>
-					<section class="template container">
-						<img src="/img/pattern.png" alt="pattern" />
+					<div class="template__title container">Ништяки для школы</div>
+
+					<section id="template" class="template container">
+						<div class="template__pattern">
+							<img src="/img/pattern.png" alt="pattern" />
+						</div>
 						<div class="template__wrapper">
+							<div class="template__wrapper__title">Ништяки для школы</div>
 							<div class="template__block">
 								<h2 class="block__title article__title">Расписание уроков</h2>
 								<button class="button">Скачать шаблон</button>
@@ -425,66 +273,8 @@
 							</div>
 						</div>
 					</section>
-					<div class="container">
-						<section class="product">
-							<article class="product__article">
-								<h2 class="article__title">Крутые подборки товаров</h2>
-								<p class="article__paragraph">
-									Lorem ipsum dolor sit amet consectetur. Elementum morbi nisi
-									at at vestibulum eu.
-								</p>
-							</article>
-							<div class="slider">
-								<div class="slider__wrapper">
-									<div class="slider__scroll">
-										<div class="slide">
-											<img src="/img/img_slide.png" alt="img" />
-											<div class="wrapper-button">
-												<button class="slide__button">Смотреть</button>
-											</div>
-										</div>
-										<div class="slide">
-											<img src="/img/img_slide.png" alt="img" />
-											<div class="wrapper-button">
-												<button class="slide__button">Смотреть</button>
-											</div>
-										</div>
-										<div class="slide">
-											<img src="/img/img_slide.png" alt="img" />
-											<div class="wrapper-button">
-												<button class="slide__button">Смотреть</button>
-											</div>
-										</div>
-										<div class="slide">
-											<img src="/img/img_slide.png" alt="img" />
-											<div class="wrapper-button">
-												<button class="slide__button">Смотреть</button>
-											</div>
-										</div>
-										<div class="slide">
-											<img src="/img/img_slide.png" alt="img" />
-											<div class="wrapper-button">
-												<button class="slide__button">Смотреть</button>
-											</div>
-										</div>
-										<div class="slide">
-											<img src="/img/img_slide.png" alt="img" />
-											<div class="wrapper-button">
-												<button class="slide__button">Смотреть</button>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div id="btnLeftSlideProduct" class="slider__arrow">
-									<img src="/img/icon/Arrow.svg" alt="Arrow" />
-								</div>
-								<div id="btnRightSlideProduct" class="slider__arrow">
-									<img src="/img/icon/Arrow.svg" alt="Arrow" />
-								</div>
-							</div>
-						</section>
-					</div>
-					<section class="information container">
+
+					<section id="information" class="information container">
 						<h2 class="article__title">Полезная информация к школе</h2>
 						<p class="article__paragraph">
 							Новости о школе, полезные статьи, выгодны предложения, всё это вы
@@ -589,41 +379,6 @@
 							alt="school-suplies_2"
 						/>
 					</div>
-					<section class="psychologist container">
-						<img src="/img/psychologist.png" alt="psychologist" />
-						<article class="psychologist__article">
-							<div class="article__flex">
-								<img src="/img/psychologist.png" alt="psychologist" />
-								<div>
-									<h2 class="article__title">Общение <br />с психологом</h2>
-									<p class="article__paragraph">
-										Наш психолог поделится с вами своим опытом и знаниями в
-										области воспитания и обучения детей
-									</p>
-								</div>
-							</div>
-
-							<div class="article__description">
-								<h4 class="description__name">Елена Бондарева</h4>
-								<span class="description__job"
-									>Штатный психолог компании «Евроторг»</span
-								>
-								<p class="description__paragraph">
-									Lorem ipsum dolor sit amet consectetur. Et volutpat nulla
-									pellentesque montes ut viverra risus. Ut est interdum at fusce
-									convallis. Risus elementum sapien sed lobortis duis ridiculus
-									scelerisque interdum. Sit elementum posuere ultrices eget et
-									enim quis tellus in. Proin donec tortor facilisi vulputate
-									tristique vitae donec aenean. Quam urna amet hendrerit ut urna
-									tortor viverra tellus massa. Ultrices amet sit at ornare at.
-									Nulla viverra velit egestas facilisi tempor id diam. Aliquet
-									amet semper pretium est praesent tellus. Ut eleifend dui
-									natoque rhoncus elementum.
-								</p>
-								<button class="button">Задать свой вопрос</button>
-							</div>
-						</article>
-					</section>
 				</main>
 				<footer class="footer">
 					<img class="footer__calc" src="img/calc.png" alt="calc" />

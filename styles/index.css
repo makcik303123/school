@@ -11,9 +11,8 @@
 .app {
   max-width: 100vw;
   overflow: hidden;
-  background-color: #3b5ec9;
-  background: url(/img/background.jpg) center no-repeat;
-  background-size: cover;
+  background: url("/img/background.png") center no-repeat, radial-gradient(124.41% 181.27% at 118.96% 0%, #733c8f 0%, #793c8f 55.5%, #742e98 100%);
+  background-size: cover, cover;
 }
 .app .wrapper {
   height: 100%;

@@ -1,13 +1,26 @@
 .swiper {
   overflow: initial !important;
   overflow-x: clip !important;
+  box-shadow: 0px 98px 120.1px -69px rgba(0, 0, 0, 0.25);
 }
 .swiper .swiper-button-prev {
-  color: #ffc800;
+  color: #000;
+  transition: 0.2s;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
   transition: 0.2s;
 }
 .swiper .swiper-button-prev:hover {
-  color: rgba(255, 200, 0, 0.7529411765);
+  background: #c3c3c3;
+}
+.swiper .swiper-button-prev::after {
+  margin-right: 4px;
+  font-size: 20px;
 }
 @media (max-width: 998px) {
   .swiper .swiper-button-prev {
@@ -15,11 +28,22 @@
   }
 }
 .swiper .swiper-button-next {
-  color: #ffc800;
+  color: #000;
   transition: 0.2s;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
 }
 .swiper .swiper-button-next:hover {
-  color: rgba(255, 200, 0, 0.7529411765);
+  background: #c3c3c3;
+}
+.swiper .swiper-button-next::after {
+  margin-left: 4px;
+  font-size: 20px;
 }
 @media (max-width: 998px) {
   .swiper .swiper-button-next {
@@ -52,5 +76,47 @@
 @media (max-width: 768px) {
   .swiper .swiper-pagination {
     margin-bottom: -7vw;
+  }
+}
+
+.slider__arrow {
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: -25px;
+  top: calc(50% - 66px);
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+.slider__arrow:nth-last-child(1) {
+  left: initial;
+  right: -25px;
+}
+.slider__arrow:nth-last-child(1) img {
+  transform: rotate(180deg);
+}
+.slider__arrow:nth-last-child(1):hover {
+  left: initial;
+  background-color: #b1b1b1;
+  transform: translateX(5px);
+}
+.slider__arrow:hover {
+  background-color: #b1b1b1;
+  transform: translateX(-5px);
+}
+@media (max-width: 1200px) {
+  .slider__arrow {
+    transform: scale(0.85);
+  }
+}
+@media (max-width: 992px) {
+  .slider__arrow {
+    transform: scale(0.75);
   }
 }/*# sourceMappingURL=swiper.css.map */

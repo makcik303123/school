@@ -1,0 +1,152 @@
+.template {
+	display: flex;
+	gap: 30px;
+	align-items: flex-end;
+	margin-bottom: 100px;
+	margin-top: 60px;
+
+	.template__pattern {
+		width: 90%;
+		min-width: 60%;
+
+		img {
+			width: 100%;
+		}
+
+		@media (max-width: 768px) {
+			width: 100%;
+		}
+	}
+
+	.template__wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		width: 100%;
+
+		.template__wrapper__title {
+			color: #fff;
+
+			font-family: Gilroy, sans-serif;
+			font-size: 90px;
+			font-style: normal;
+			font-weight: 900;
+			line-height: 71.7%;
+
+			@media (max-width: 1460px) {
+				display: none;
+			}
+		}
+
+		.template__block {
+			position: relative;
+			overflow: hidden;
+			gap: 40px;
+			padding: 38px 60px;
+			border-radius: 50px;
+			border: 1px solid #fff;
+			transition: 0.4s;
+
+			.block__title {
+				position: relative;
+				max-width: 377px;
+				margin-bottom: 40px;
+				z-index: 2;
+				font-size: 46px;
+
+				@media (max-width: 576px) {
+					margin-bottom: 25px;
+				}
+			}
+
+			.button {
+				position: relative;
+				z-index: 2;
+				transition: 0.4s;
+			}
+
+			.block__pattern {
+				position: absolute;
+				top: 30px;
+				right: -30px;
+				transition: 0.4s;
+
+				&.change {
+					opacity: 0;
+					top: -180%;
+				}
+
+				@media (max-width: 992px) {
+					width: 50%;
+					top: 0;
+					bottom: -35%;
+				}
+				@media (max-width: 576px) {
+					right: -70px;
+				}
+			}
+			@media (max-width: 576px) {
+				padding: 25px 30px;
+			}
+			@media (max-width: 460px) {
+				padding: 18px 30px;
+			}
+
+			&:hover {
+				background: rgba(108, 142, 13, 0.7);
+
+				.block__pattern {
+					&.change {
+						opacity: 1;
+						top: 0;
+					}
+
+					&.default {
+						top: 100%;
+					}
+				}
+				.button {
+					background: #ffea00;
+				}
+			}
+		}
+	}
+
+	img {
+		width: 49%;
+
+		@media (max-width: 992px) {
+			width: 60%;
+		}
+	}
+	@media (max-width: 1200px) {
+		align-items: center;
+	}
+
+	@media (max-width: 992px) {
+		flex-direction: column;
+		margin-top: 60px;
+	}
+}
+
+.template__title {
+	margin-top: 80px;
+	text-align: center;
+	color: #fff;
+	font-family: Gilroy, sans-serif;
+	font-size: 90px;
+	font-style: normal;
+	font-weight: 900;
+	line-height: 71.7%;
+	display: none;
+
+	@media (max-width: 1460px) {
+		display: block;
+	}
+	@media (max-width: 992px) {
+		font-size: 72px;
+	}
+	@media (max-width: 768px) {
+		font-size: 48px;
+	}
+}

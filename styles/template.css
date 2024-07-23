@@ -5,11 +5,36 @@
   margin-bottom: 100px;
   margin-top: 60px;
 }
+.template .template__pattern {
+  width: 90%;
+  min-width: 60%;
+}
+.template .template__pattern img {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .template .template__pattern {
+    width: 100%;
+  }
+}
 .template .template__wrapper {
   display: flex;
   flex-direction: column;
   gap: 30px;
   width: 100%;
+}
+.template .template__wrapper .template__wrapper__title {
+  color: #fff;
+  font-family: Gilroy, sans-serif;
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 71.7%;
+}
+@media (max-width: 1460px) {
+  .template .template__wrapper .template__wrapper__title {
+    display: none;
+  }
 }
 .template .template__wrapper .template__block {
   position: relative;
@@ -25,6 +50,7 @@
   max-width: 377px;
   margin-bottom: 40px;
   z-index: 2;
+  font-size: 46px;
 }
 @media (max-width: 576px) {
   .template .template__wrapper .template__block .block__title {
@@ -43,6 +69,7 @@
   transition: 0.4s;
 }
 .template .template__wrapper .template__block .block__pattern.change {
+  opacity: 0;
   top: -180%;
 }
 @media (max-width: 992px) {
@@ -71,13 +98,14 @@
   background: rgba(108, 142, 13, 0.7);
 }
 .template .template__wrapper .template__block:hover .block__pattern.change {
+  opacity: 1;
   top: 0;
 }
 .template .template__wrapper .template__block:hover .block__pattern.default {
   top: 100%;
 }
 .template .template__wrapper .template__block:hover .button {
-  background: #FFEA00;
+  background: #ffea00;
 }
 .template img {
   width: 49%;
@@ -96,5 +124,32 @@
   .template {
     flex-direction: column;
     margin-top: 60px;
+  }
+}
+
+.template__title {
+  margin-top: 80px;
+  text-align: center;
+  color: #fff;
+  font-family: Gilroy, sans-serif;
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 71.7%;
+  display: none;
+}
+@media (max-width: 1460px) {
+  .template__title {
+    display: block;
+  }
+}
+@media (max-width: 992px) {
+  .template__title {
+    font-size: 72px;
+  }
+}
+@media (max-width: 768px) {
+  .template__title {
+    font-size: 48px;
   }
 }/*# sourceMappingURL=template.css.map */
