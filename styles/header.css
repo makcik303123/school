@@ -46,6 +46,10 @@ body.lock {
   color: #fff;
   text-align: center;
   line-height: 71.7%;
+  transition: color 0.2s ease-in-out;
+}
+.header.container .menu .menu__body .header__nav .nav__item .nav__link:hover {
+  color: #ffc800;
 }
 @media (max-width: 992px) {
   .header.container .menu .menu__body .header__nav .nav__item .nav__link {

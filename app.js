@@ -270,8 +270,6 @@ let slideToShowP = 2;
 
 const anchors = document.querySelectorAll(".anchors");
 
-console.log(anchors);
-
 for (let anchor of anchors) {
 	anchor.addEventListener("click", function (e) {
 		e.preventDefault();
