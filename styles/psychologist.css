@@ -84,8 +84,13 @@
 .wrapper__picture-1 .globe {
   position: absolute;
   top: -130px;
-  left: 0;
-  width: 14.5%;
+  right: 0;
+  width: 25%;
+}
+@media (max-width: 992px) {
+  .wrapper__picture-1 .globe {
+    width: 200px;
+  }
 }
 .wrapper__picture-1 .suplies {
   position: absolute;

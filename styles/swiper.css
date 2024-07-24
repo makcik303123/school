@@ -119,4 +119,8 @@
   .slider__arrow {
     transform: scale(0.75);
   }
+}
+
+.swiper-slide img {
+  border-radius: 20px;
 }/*# sourceMappingURL=swiper.css.map */

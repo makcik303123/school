@@ -37,9 +37,11 @@
   }
 }
 .template .template__wrapper .template__block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   position: relative;
   overflow: hidden;
-  gap: 40px;
   padding: 38px 60px;
   border-radius: 50px;
   border: 1px solid #fff;
@@ -47,7 +49,6 @@
 }
 .template .template__wrapper .template__block .block__title {
   position: relative;
-  max-width: 377px;
   margin-bottom: 40px;
   z-index: 2;
   font-size: 46px;
@@ -64,13 +65,13 @@
 }
 .template .template__wrapper .template__block .block__pattern {
   position: absolute;
-  top: 30px;
-  right: -30px;
+  top: 0;
+  left: 0px;
   transition: 0.4s;
 }
 .template .template__wrapper .template__block .block__pattern.change {
   opacity: 0;
-  top: -180%;
+  bottom: -180%;
 }
 @media (max-width: 992px) {
   .template .template__wrapper .template__block .block__pattern {
@@ -97,12 +98,13 @@
 .template .template__wrapper .template__block:hover {
   background: rgba(108, 142, 13, 0.7);
 }
+.template .template__wrapper .template__block:hover .block__pattern {
+  top: 100%;
+}
 .template .template__wrapper .template__block:hover .block__pattern.change {
   opacity: 1;
-  top: 0;
-}
-.template .template__wrapper .template__block:hover .block__pattern.default {
-  top: 100%;
+  bottom: 0;
+  top: initial;
 }
 .template .template__wrapper .template__block:hover .button {
   background: #ffea00;
